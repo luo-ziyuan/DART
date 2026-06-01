@@ -1,0 +1,11 @@
+torch>=2.1
+torchvision>=0.16
+numpy>=1.23
+tqdm>=4.66
+Pillow>=9.0
+imageio>=2.34
+configargparse>=1.7
+tensorboard>=2.14
+torchmetrics>=1.2
+augly>=1.0.0
+kornia>=0.7

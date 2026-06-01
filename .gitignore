@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+
+data/
+logs/
+temp/
+outputs/
+runs/
+wandb/
+
+*.log

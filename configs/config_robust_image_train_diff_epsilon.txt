@@ -1,0 +1,43 @@
+# basic setting
+seed = 0
+method = robust_inr
+base_log_dir = logs/robust_image
+test_dir = data/test2014
+msg_decoder_path = Decoder/ckpt/other_dec_48b_whit.torchscript.pt
+
+attack_clean = True
+N_iters = 2000
+
+# attack training
+train_net_PGD_epsilon = 8
+train_net_PGD_num_iter = 10
+
+# net_FGSM
+attack_net_FGSM = True
+attack_net_FGSM_epsilon = 8
+
+# net_PGD
+attack_net_PGD = True
+attack_net_PGD_epsilon = 8
+attack_net_PGD_num_iter = 100
+
+# net_DSPGD
+attack_net_DSPGD = False
+attack_net_DSPGD_net_epsilon = 8
+attack_net_DSPGD_num_iter = 100
+attack_net_DSPGD_image_epsilon_start = 2.0
+attack_net_DSPGD_image_epsilon_interval = 2.0
+attack_net_DSPGD_image_epsilon_end = 20.0
+
+# net_CW
+attack_net_CW = True
+attack_net_CW_epsilon = 8
+attack_net_CW_num_iter = 100
+
+lambda_w = 0.001
+lambda_i = 1.0
+multires = 20
+lrate = 0.1
+
+save_inr = True
+data_augmentation = True
